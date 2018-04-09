@@ -32,7 +32,7 @@ puzzle = np.array(puzzle)
 root=Tk()
 root.configure(background='black')
  
-
+# hey saluuuut
 
 var=[]
 for i in puzzle:
