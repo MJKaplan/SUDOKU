@@ -67,30 +67,28 @@ for i in range(9):
 
 var = var.reshape(9,9)
 
+
+def bonchiffre(chiffre, row, column):
+    x = box(row, column)
+    if chiffre in puzzle[row] or chiffre in puzzle[:, column] or chiffre in puzzle[x[0]:x[1], x[2]:x[3]]:
+        return False
+    return True
+
+
+def box(row, column):
+    uprow = [(row + i) for i in range(1, 4) if (row + i) % 3 == 0][0]
+    downrow = uprow - 3
+    upcolumn = [(column + i) for i in range(1, 4) if (column + i) % 3 == 0][0]
+    downcolumn = upcolumn - 3
+    return [downrow, uprow, downcolumn, upcolumn]
+
 def SolveSudoku(puzzle):
 
 
     z=[(index, x) for index, x in np.ndenumerate(puzzle)]
     z = np.array(z)
     inconnues = z[z[:,1]==0]  # indexes des cases qu'on peut modifier*$
-    
-    
-    
 
-    def bonchiffre(chiffre, row, column):  
-                                      
-        x = box(row, column)
-        if chiffre in puzzle[row] or chiffre in puzzle[:, column] or chiffre in puzzle[x[0]:x[1],x[2]:x[3]] :
-            return False
-        return True
-    
-    def box(row, column):                         
- 
-        uprow = [(row + i) for i in range(1,4) if (row + i) % 3 == 0 ][0]
-        downrow = uprow - 3
-        upcolumn = [(column + i) for i in range(1,4) if (column + i) % 3 == 0 ][0]
-        downcolumn = upcolumn - 3
-        return [downrow, uprow, downcolumn, upcolumn]      
 
     i=0   
     counter = 0
