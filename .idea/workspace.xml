@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e430103b-4ea7-4ad3-accc-955b2b44176a" name="Default" comment="" />
+    <list default="true" id="e430103b-4ea7-4ad3-accc-955b2b44176a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SUDOKU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SUDOKU.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TKINTER SUDOKU.py" beforeDir="false" afterPath="$PROJECT_DIR$/TKINTER SUDOKU.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +37,8 @@
       <file leaf-file-name="TKINTER SUDOKU.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="340">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#81#99#0" expanded="true" />
               </folding>
@@ -42,6 +47,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Gridsudo</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,7 +97,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/multiple_changes.patch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,20 +249,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49871466" weight="0.32791328" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5070694" side_tool="true" visible="true" weight="0.47560975" />
-      <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" sideWeight="0.5040816" side_tool="true" visible="true" weight="0.32969153" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.510625" side_tool="true" visible="true" weight="0.31800264" />
+      <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" sideWeight="0.5040816" side_tool="true" visible="true" weight="0.329375" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.48971722" weight="0.53252035" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.489375" visible="true" weight="0.31800264" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.8804627" weight="0.33604336" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49871466" weight="0.32791328" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4929306" visible="true" weight="0.47560975" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4925" weight="0.4743758" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" weight="0.14872068" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49591836" weight="0.32969153" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3371869" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.49928263" weight="0.32969153" />
       <window_info id="Structure" order="1" sideWeight="0.5028653" side_tool="true" weight="0.14845759" />
       <window_info id="Favorites" order="2" sideWeight="0.5021521" side_tool="true" weight="0.14845759" />
@@ -263,6 +273,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3371869" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,13 +308,6 @@
               </option>
               <option name="FILTERS">
                 <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
                   <entry key="user">
                     <value>
                       <list>
@@ -345,6 +349,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#81#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1817">
@@ -401,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="340">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#81#99#0" expanded="true" />
           </folding>
