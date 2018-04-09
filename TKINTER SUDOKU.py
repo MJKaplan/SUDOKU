@@ -39,13 +39,12 @@ count = 0
 for i in range(9):
     for j in range(9):
         if puzzle[i, j] == 0:
-            Label(root, textvariable=var[j], width=4, height=2, font=("Arial", 16), foreground="black",
+            Label(root, textvariable=var[count], width=4, height=2, font=("Arial", 16), foreground="black",
                   background="#D9949F").grid(row=i, column=j, padx=1, pady=1)
         else:
-            Label(root, textvariable=var[j], width=4, height=2, font=("Arial", 16), foreground="black").grid(row=i,
-                                                                                                                 column=j,
-                                                                                                                 padx=1,
-                                                                                                                 pady=1)
+            Label(root, textvariable=var[count], width=4, height=2, font=("Arial", 16), foreground="black").grid(row=i,column=j,padx=1, pady=1)
+        count += 1
+        
 var = var.reshape(9, 9)
 
 
@@ -64,8 +63,8 @@ def box(row, column):
     return [downrow, uprow, downcolumn, upcolumn]
 
 
-def SolveSudoku(Gridsudo):
-    z = [(index, x) for index, x in np.ndenumerate(Gridsudo)]
+def solvesudoku(gridsudo):
+    z = [(index, x) for index, x in np.ndenumerate(gridsudo)]
     z = np.array(z)
     inconnues = z[z[:, 1] == 0]  # indexes des cases qu'on peut modifier*$
     i = 0
@@ -75,30 +74,25 @@ def SolveSudoku(Gridsudo):
 
         if i == (len(inconnues)):
             print(counter)
-            return Gridsudo
+            return gridsudo
 
-        for j in range((Gridsudo[inconnues[i][0][0], inconnues[i][0][1]]), 10):
+        for j in range((gridsudo[inconnues[i][0][0], inconnues[i][0][1]]), 10):
 
             if bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]):
-                Gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = j
+                gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = j
                 var[inconnues[i][0][0], inconnues[i][0][1]].set(j)
                 root.update()
-                # time.sleep(.02)
-                counter += 1
                 i += 1
                 break
 
             if not bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]) and j == 9:
-                Gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = 0
+                gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = 0
                 var[inconnues[i][0][0], inconnues[i][0][1]].set("")
-
                 root.update()
-                # time.sleep(.02)
-                counter += 1
                 i -= 1
                 break
 
 
-SolveSudoku(puzzle)
+solvesudoku(puzzle)
 root.update()
 root.mainloop()

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e430103b-4ea7-4ad3-accc-955b2b44176a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SUDOKU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SUDOKU.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Mik.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TKINTER SUDOKU.py" beforeDir="false" afterPath="$PROJECT_DIR$/TKINTER SUDOKU.py" afterDir="false" />
     </list>
@@ -37,8 +37,8 @@
       <file leaf-file-name="TKINTER SUDOKU.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
                 <element signature="e#81#99#0" expanded="true" />
               </folding>
@@ -90,14 +90,27 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SUDOKU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SUDOKU" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/multiple_changes.patch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -165,6 +178,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="1" BundledDictionary0="english.dic" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
@@ -236,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523300333898</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Test commit">
+      <created>1523312139449</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523312139449</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -253,16 +274,17 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49871466" weight="0.32791328" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.510625" side_tool="true" visible="true" weight="0.31800264" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.500625" side_tool="true" visible="true" weight="0.325887" />
       <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" sideWeight="0.5040816" side_tool="true" visible="true" weight="0.329375" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.489375" visible="true" weight="0.31800264" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.489375" weight="0.31800264" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.8804627" weight="0.33604336" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49871466" weight="0.32791328" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498125" weight="0.32720104" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4925" weight="0.4743758" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" weight="0.14872068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" visible="true" weight="0.148125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49591836" weight="0.32969153" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.33639947" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.49928263" weight="0.32969153" />
       <window_info id="Structure" order="1" sideWeight="0.5028653" side_tool="true" weight="0.14845759" />
       <window_info id="Favorites" order="2" sideWeight="0.5021521" side_tool="true" weight="0.14845759" />
@@ -273,7 +295,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3371869" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +362,8 @@
     <MESSAGE value="multiple changes" />
     <MESSAGE value="multiple changesjn" />
     <MESSAGE value="multiple changesjn&#10;&#10;Signed-off-by: michaelkaplanparis &lt;mike.j.kaplan@gmail.com&gt;&#10;(cherry picked from commit 38ab532dfc045f63fdf8b3fec744ca7d16e4a334)" />
-    <option name="LAST_COMMIT_MESSAGE" value="multiple changesjn&#10;&#10;Signed-off-by: michaelkaplanparis &lt;mike.j.kaplan@gmail.com&gt;&#10;(cherry picked from commit 38ab532dfc045f63fdf8b3fec744ca7d16e4a334)" />
+    <MESSAGE value="Test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,8 +437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="1105">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
           <folding>
             <element signature="e#81#99#0" expanded="true" />
           </folding>
