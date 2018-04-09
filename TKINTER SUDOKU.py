@@ -6,12 +6,7 @@ This is a temporary script file.
 """
 
 import numpy as np
-from numpy import ndindex, ndenumerate
-from numpy import random
 from tkinter import*
-from tkinter import ttk
-import time
-import random
 
 
 puzzle = [[8,0,0,0,0,0,0,0,0],
@@ -46,9 +41,6 @@ for i in puzzle:
     
 var= np.array(var)
 
-
-
-
 count = 0
 for i in range(9):
     for j in range(9):   
@@ -57,12 +49,7 @@ for i in range(9):
         else:
             Label(root, textvariable=var[count],width=4, height=2, font=("Arial", 16),foreground="black").grid(row=i, column=j, padx = 1, pady =1)
 
-        
         count += 1
-        
-        
-        
-        
         
 
 var = var.reshape(9,9)
@@ -82,14 +69,12 @@ def box(row, column):
     downcolumn = upcolumn - 3
     return [downrow, uprow, downcolumn, upcolumn]
 
-def SolveSudoku(puzzle):
 
+def SolveSudoku(puzzle):
 
     z=[(index, x) for index, x in np.ndenumerate(puzzle)]
     z = np.array(z)
-    inconnues = z[z[:,1]==0]  # indexes des cases qu'on peut modifier*$
-
-
+    inconnues = z[z[:,1] == 0]  # indexes des cases qu'on peut modifier*$
     i=0   
     counter = 0
     
@@ -98,24 +83,19 @@ def SolveSudoku(puzzle):
         if i == (len(inconnues)):  
             print(counter)
             return puzzle
-            break
-        
             
         for j in range((puzzle[inconnues[i][0][0],inconnues[i][0][1]]),10):
             
-            if bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]) == True  :
+            if bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]):
                 puzzle[inconnues[i][0][0], inconnues[i][0][1]] = j 
                 var[inconnues[i][0][0], inconnues[i][0][1]].set(j)
                 root.update()
                 # time.sleep(.02)
-
-
                 counter += 1                
                 i += 1                
                 break
-          
 
-            if bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]) == False and j==9 :
+            if not bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]) and j==9:
                 puzzle[inconnues[i][0][0], inconnues[i][0][1]] = 0   
                 var[inconnues[i][0][0], inconnues[i][0][1]].set("")
                 
