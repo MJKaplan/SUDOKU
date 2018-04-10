@@ -13,10 +13,7 @@ puzzle = np.array([[8, 0, 0, 0, 0, 0, 0, 0, 0],
 
 root = Tk()
 root.configure(background='black')
-
 var = []
-
-
 for i in puzzle:
     for x in i:
         if x == 0:
@@ -24,9 +21,7 @@ for i in puzzle:
         y = StringVar()
         y.set(x)
         var.append(y)
-
 var = np.array(var)
-
 count = 0
 for i in range(9):
     for j in range(9):
