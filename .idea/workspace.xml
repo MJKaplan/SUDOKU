@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e430103b-4ea7-4ad3-accc-955b2b44176a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SUDOKU.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SUDOKU.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TKINTER SUDOKU.py" beforeDir="false" afterPath="$PROJECT_DIR$/TKINTER SUDOKU.py" afterDir="false" />
     </list>
@@ -37,10 +35,15 @@
       <file leaf-file-name="TKINTER SUDOKU.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="432">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#81#99#0" expanded="true" />
+                <element signature="e#582#694#0" />
+                <element signature="e#815#1567#0" />
+                <element signature="e#1337#1500#0" />
+                <element signature="e#1529#1777#0" />
+                <element signature="e#1811#2772#0" />
               </folding>
             </state>
           </provider>
@@ -111,7 +114,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/multiple_changes.patch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -258,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523312139449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactor">
+      <created>1523359709048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523359709048</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactor">
+      <created>1523359773626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523359773626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -271,7 +288,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49871466" weight="0.32791328" />
@@ -364,11 +381,12 @@
     <MESSAGE value="multiple changesjn" />
     <MESSAGE value="multiple changesjn&#10;&#10;Signed-off-by: michaelkaplanparis &lt;mike.j.kaplan@gmail.com&gt;&#10;(cherry picked from commit 38ab532dfc045f63fdf8b3fec744ca7d16e4a334)" />
     <MESSAGE value="Test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test commit" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -378,6 +396,11 @@
           <caret line="60" column="78" lean-forward="true" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
           <folding>
             <element signature="e#81#99#0" expanded="true" />
+            <element signature="e#582#694#0" />
+            <element signature="e#815#1567#0" />
+            <element signature="e#1337#1500#0" />
+            <element signature="e#1529#1777#0" />
+            <element signature="e#1811#2772#0" />
           </folding>
         </state>
       </provider>
@@ -428,7 +451,7 @@
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>Python</ID>
-          <OriginalElement />
+          <OriginalElement>#C:/Users/administrator/PycharmProjects/SUDOKU/TKINTER SUDOKU.py</OriginalElement>
           <nodes />
           <notes />
           <edges />
@@ -508,10 +531,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="432">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#81#99#0" expanded="true" />
+            <element signature="e#582#694#0" />
+            <element signature="e#815#1567#0" />
+            <element signature="e#1337#1500#0" />
+            <element signature="e#1529#1777#0" />
+            <element signature="e#1811#2772#0" />
           </folding>
         </state>
       </provider>

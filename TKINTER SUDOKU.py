@@ -1,22 +1,22 @@
 import numpy as np
 from tkinter import *
 
-puzzle = [[8, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 3, 6, 0, 0, 0, 0, 0],
-          [0, 7, 0, 0, 9, 0, 2, 0, 0],
-          [0, 5, 0, 0, 0, 7, 0, 0, 0],
-          [0, 0, 0, 0, 4, 5, 7, 0, 0],
-          [0, 0, 0, 1, 0, 0, 0, 3, 0],
-          [0, 0, 1, 0, 0, 0, 0, 6, 8],
-          [0, 0, 8, 5, 0, 0, 0, 1, 0],
-          [0, 9, 0, 0, 0, 0, 4, 0, 0]]
+puzzle = np.array([[8, 0, 0, 0, 0, 0, 0, 0, 0],
+                  [0, 0, 3, 6, 0, 0, 0, 0, 0],
+                  [0, 7, 0, 0, 9, 0, 2, 0, 0],
+                  [0, 5, 0, 0, 0, 7, 0, 0, 0],
+                  [0, 0, 0, 0, 4, 5, 7, 0, 0],
+                  [0, 0, 0, 1, 0, 0, 0, 3, 0],
+                  [0, 0, 1, 0, 0, 0, 0, 6, 8],
+                  [0, 0, 8, 5, 0, 0, 0, 1, 0],
+                  [0, 9, 0, 0, 0, 0, 4, 0, 0]])
 
-puzzle = np.array(puzzle)
 root = Tk()
 root.configure(background='black')
+
 var = []
 
-# Creation du tableau des variables
+
 for i in puzzle:
     for x in i:
         if x == 0:
@@ -26,9 +26,8 @@ for i in puzzle:
         var.append(y)
 
 var = np.array(var)
-count = 0
 
-# Rendu de la grille initiale contenant le tableau des variables
+count = 0
 for i in range(9):
     for j in range(9):
         if puzzle[i, j] == 0:
@@ -40,7 +39,6 @@ for i in range(9):
                                                                                                                  padx=1,
                                                                                                                  pady=1)
         count += 1
-        
 var = var.reshape(9, 9)
 
 
@@ -65,27 +63,22 @@ def solvesudoku(gridsudo):
     z = np.array(z)
     inconnues = z[z[:, 1] == 0]  # indexes des cases qu'on peut modifier
     solvei = 0
-
     while solvei <= len(inconnues):
         if solvei == (len(inconnues)):
             return gridsudo
         for J in range((gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]]), 10):
-
             if bonchiffre(J, inconnues[solvei][0][0], inconnues[solvei][0][1]):
                 gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]] = J
                 var[inconnues[solvei][0][0], inconnues[solvei][0][1]].set(J)
                 root.update()
                 solvei += 1
                 break
-
             if not bonchiffre(J, inconnues[solvei][0][0], inconnues[solvei][0][1]) and J == 9:
                 gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]] = 0
                 var[inconnues[solvei][0][0], inconnues[solvei][0][1]].set("")
-                root.update()
                 solvei -= 1
                 break
 
 
 solvesudoku(puzzle)
-root.update()
 root.mainloop()
