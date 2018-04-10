@@ -42,54 +42,54 @@ for i in range(9):
             Label(root, textvariable=var[count], width=4, height=2, font=("Arial", 16), foreground="black",
                   background="#D9949F").grid(row=i, column=j, padx=1, pady=1)
         else:
-            Label(root, textvariable=var[count], width=4, height=2, font=("Arial", 16), foreground="black").grid(row=i,column=j,padx=1, pady=1)
+            Label(root, textvariable=var[count], width=4, height=2, font=("Arial", 16), foreground="black").grid(row=i,
+                                                                                                                 column=j,
+                                                                                                                 padx=1,
+                                                                                                                 pady=1)
         count += 1
         
 var = var.reshape(9, 9)
 
 
 def bonchiffre(chiffre, row, column):
-    x = box(row, column)
-    if chiffre in puzzle[row] or chiffre in puzzle[:, column] or chiffre in puzzle[x[0]:x[1], x[2]:x[3]]:
+    bonchiffrex = box(row, column)
+    if chiffre in puzzle[row] or chiffre in puzzle[:, column] or chiffre in puzzle[bonchiffrex[0]:bonchiffrex[1],
+                                                                                   bonchiffrex[2]:bonchiffrex[3]]:
         return False
     return True
 
 
 def box(row, column):
-    uprow = [(row + i) for i in range(1, 4) if (row + i) % 3 == 0][0]
+    uprow = [(row + boxi) for boxi in range(1, 4) if (row + boxi) % 3 == 0][0]
     downrow = uprow - 3
-    upcolumn = [(column + i) for i in range(1, 4) if (column + i) % 3 == 0][0]
+    upcolumn = [(column + boxi) for boxi in range(1, 4) if (column + boxi) % 3 == 0][0]
     downcolumn = upcolumn - 3
     return [downrow, uprow, downcolumn, upcolumn]
 
 
 def solvesudoku(gridsudo):
-    z = [(index, x) for index, x in np.ndenumerate(gridsudo)]
+    z = [(index, solvex) for index, solvex in np.ndenumerate(gridsudo)]
     z = np.array(z)
-    inconnues = z[z[:, 1] == 0]  # indexes des cases qu'on peut modifier*$
-    i = 0
-    counter = 0
+    inconnues = z[z[:, 1] == 0]  # indexes des cases qu'on peut modifier
+    solvei = 0
 
-    while i <= len(inconnues):
-
-        if i == (len(inconnues)):
-            print(counter)
+    while solvei <= len(inconnues):
+        if solvei == (len(inconnues)):
             return gridsudo
+        for J in range((gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]]), 10):
 
-        for j in range((gridsudo[inconnues[i][0][0], inconnues[i][0][1]]), 10):
-
-            if bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]):
-                gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = j
-                var[inconnues[i][0][0], inconnues[i][0][1]].set(j)
+            if bonchiffre(J, inconnues[solvei][0][0], inconnues[solvei][0][1]):
+                gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]] = J
+                var[inconnues[solvei][0][0], inconnues[solvei][0][1]].set(J)
                 root.update()
-                i += 1
+                solvei += 1
                 break
 
-            if not bonchiffre(j, inconnues[i][0][0], inconnues[i][0][1]) and j == 9:
-                gridsudo[inconnues[i][0][0], inconnues[i][0][1]] = 0
-                var[inconnues[i][0][0], inconnues[i][0][1]].set("")
+            if not bonchiffre(J, inconnues[solvei][0][0], inconnues[solvei][0][1]) and J == 9:
+                gridsudo[inconnues[solvei][0][0], inconnues[solvei][0][1]] = 0
+                var[inconnues[solvei][0][0], inconnues[solvei][0][1]].set("")
                 root.update()
-                i -= 1
+                solvei -= 1
                 break
 
 
