@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e430103b-4ea7-4ad3-accc-955b2b44176a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/TKINTER SUDOKU_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TKINTER SUDOKU.py" beforeDir="false" afterPath="$PROJECT_DIR$/TKINTER SUDOKU.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,21 +32,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TKINTER SUDOKU.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TKINTER SUDOKU.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="26">
+              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="e#81#99#0" expanded="true" />
                 <element signature="e#582#694#0" />
-                <element signature="e#815#1567#0" />
-                <element signature="e#1337#1500#0" />
                 <element signature="e#1529#1777#0" />
-                <element signature="e#1811#2772#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TKINTER SUDOKU_class.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU_class.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -275,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523359773626</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactor 2">
+      <created>1523360483563</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523360483563</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactor 2">
+      <created>1523360532302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523360532302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -292,11 +308,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49871466" weight="0.32791328" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50373137" side_tool="true" visible="true" weight="0.32658958" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5042644" side_tool="true" visible="true" weight="0.32658958" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.489375" weight="0.31800264" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.8804627" weight="0.33604336" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.32658958" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49573562" visible="true" weight="0.32658958" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4925" weight="0.4743758" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978479" visible="true" weight="0.14978679" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -382,7 +398,8 @@
     <MESSAGE value="multiple changesjn&#10;&#10;Signed-off-by: michaelkaplanparis &lt;mike.j.kaplan@gmail.com&gt;&#10;(cherry picked from commit 38ab532dfc045f63fdf8b3fec744ca7d16e4a334)" />
     <MESSAGE value="Test commit" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Refactor 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -397,10 +414,7 @@
           <folding>
             <element signature="e#81#99#0" expanded="true" />
             <element signature="e#582#694#0" />
-            <element signature="e#815#1567#0" />
-            <element signature="e#1337#1500#0" />
             <element signature="e#1529#1777#0" />
-            <element signature="e#1811#2772#0" />
           </folding>
         </state>
       </provider>
@@ -531,18 +545,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="26">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="e#81#99#0" expanded="true" />
             <element signature="e#582#694#0" />
-            <element signature="e#815#1567#0" />
-            <element signature="e#1337#1500#0" />
             <element signature="e#1529#1777#0" />
-            <element signature="e#1811#2772#0" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TKINTER SUDOKU_class.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
